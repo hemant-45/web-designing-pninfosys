@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>border</title>
+
+	<style>
+		.a{
+			border-style: solid;
+			width: 300px;
+			height: 300px;
+			border-top-width: 23px;
+			border-top-style: dashed;
+			border-top-color: red;
+		}
+
+		.b{ 
+			border-style: solid;
+			width: 300px;
+			height: 300px;
+			border-radius: 70px 70px 0px 0px;
+			border-radius: 0px 40px;
+			border-radius: 100px;
+		}
+		.button{
+            width: 100px;
+            height: 30px;
+            background: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 28px;
+            border: hidden;
+
+		}
+
+             /*   it gives the frame to our image */
+        .c{
+        	border: 20px solid;
+        	width: 400px;
+        	height: 500px;
+        	border-image: url(image/yname.jpg) 100 round;
+        }
+        img{
+            width:100% ;
+            height: 500px;
+
+        }
+
+
+
+	</style>
+
+</head>
+<body>
+
+   <div class="a">
+   	    doggo
+   </div>
+
+    <div class="b">
+   	    doggo
+   </div>
+
+     <!--  2 ways of making button -->
+   <button type="submit" class="button">Submit</button>
+   <input type="submit" name="" value="Add to cart" class="button">
+
+       <!-- to give framinng to a image -->
+   <div class="c">
+   	    <img src="image/aot.jpg" alt="">
+   </div>
+
+
+</body>
+</html>

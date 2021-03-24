@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>marquee</title>
+	<style type="text/css" media="screen">
+         *{
+         	margin:0px;
+         	padding:0px;
+         }
+		.a{
+          border:2px solid;
+          width:100%;
+          background:blue;
+          height:40px;
+          color:white;
+          line-height: 40px;
+          font-weight:bold;
+		}
+        .pos{
+            position: fixed;
+            left:300px;
+            top:400px;
+        }
+
+        #box1{
+            width:500px;
+            height:500px;
+            border:1px solid black;
+            background :green;
+
+        }
+        #box2{
+             width:150px;
+            height:150px;
+            border:1px solid black;
+            background :red;
+            position: relative;
+            
+        }
+
+
+
+	</style>
+</head>
+<body>
+
+<marquee scrollamount="20">hello</marquee>
+
+<div class="a">
+	<marquee direction="" scrollamount="8">
+		<img src="https://www.rgpv.ac.in/Images/new_icon_blink.gif" alt="">
+		hello&nbsp;&nbsp;hello
+	</marquee>
+</div>
+
+<marquee behavior="scroll" scrollamount="20" direction="right">
+	hello
+</marquee>
+
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<h2 class="pos">Welcome</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+
+
+
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<div id="box1">
+	<div id="box2">
+		
+	</div>
+</div>
+
+</body>
+</html>

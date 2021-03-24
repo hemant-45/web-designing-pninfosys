@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awesome Website HTML</title>
+	<link rel="shortcut icon" href="images/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<!--using-font-awesome-------->
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!--main-section-------------->
+	<section id="main">
+	<!--navigation---------->
+	<nav>
+	<!--logo-------->
+	<a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
+	<!--menu-bar-icon---------->
+	<div class="menu-icon"></div>
+	<!--menu--------->
+	<ul class="menu">
+	<li><a href="#">Home</a></li>	
+	<li><a href="#">About</a></li>	
+	<li><a href="#">Contact</a></li>	
+	<li><a href="#">Team</a></li>	
+	</ul>
+	</nav>
+	<!--box---------------->
+	<div class="main-box">
+	<!--text---------->
+	<div class="text">
+		<span><font>We Do </font>What You Want</span>
+		<h2>User Interface</h2>
+		<p>Minimal And Beautiful User Interface For Your Upcoming Projects.</p>
+		<!--btn--------->
+	<a href="#" class="btn">Our Work</a>
+	</div>
+	<!--img------------->
+	<div class="img">
+	<img src="images/interface.png" alt="interface">	
+	</div>
+	</div>
+	<!--footer----------->
+	<footer>
+	<!--social-------->
+	<div class="social">
+	<a href="#"><i class="fab fa-facebook-f"></i></a>	
+	<a href="#"><i class="fab fa-twitter"></i></a>	
+	<a href="#"><i class="fab fa-youtube"></i></a>	
+	</div>
+	<!--copyright---------->
+	<div class="copyright">Copyright 2020 - GoingToInternet</div>
+	</footer>
+	<!--arrow----------->
+	<div class="arrow"></div>
+	</section>
+	<!--subscribe-section----------->
+	<section class="subscribe">
+	<!--img------->
+	<img src="images/designs1.png" alt="designs"/>
+	<h2>Subscribe For Posts Notifications</h2>
+	<!--input----------------->
+	<div class="search">
+	<input type="text" placeholder="Example@gmail.com"/>
+	<a href="#">Send</a>
+	</div>
+	<!--copyright----->
+	<div class="right">Copyright 2020 - GoingToInternet</div>
+	</section>
+	
+	<!--JQuery--------------->
+	<script type="text/javascript" src="js/Jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.menu-icon').click(function(){
+			$('.menu-icon,.menu,.main-box,footer,.logo,.subscribe').toggleClass('active')
+		})
+	})
+	
+	</script>
+</body>
+</html>
