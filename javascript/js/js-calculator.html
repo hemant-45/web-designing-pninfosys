@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js-calculator</title>
+	<style>
+		.form_style{
+			width: 400px;
+			height: 600px;
+			margin: auto;
+			border: 2px solid black;
+		}
+		.form_style input{
+			width: 130px;
+            height: 85px;
+            background-color:green;
+            font-size:30px;
+            color:white;
+            border-bottom:1px solid black;
+		}
+		#final_ans{
+			width: 390px;
+		}
+		#clean_button{
+			width: 398px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="form_style">
+<form name="form"> 
+	<!-- data gets stored in this form variable -->
+	<input type="text" name="answer" id="final_ans">
+	<br>
+	<input onclick="form.answer.value += '1' " type="button" name="" value="1">
+	<input onclick="form.answer.value += '2' " type="button" name="" value="2">
+	<input onclick="form.answer.value += '3' " type="button" name="" value="3">
+	<br>
+	<input onclick="form.answer.value += '4' " type="button" name="" value="4">
+	<input onclick="form.answer.value += '5' " type="button" name="" value="5">
+	<input onclick="form.answer.value += '6' " type="button" name="" value="6">
+	<br>
+	<input onclick="form.answer.value += '7' " type="button" name="" value="7">
+	<input onclick="form.answer.value += '8' " type="button" name="" value="8">
+	<input onclick="form.answer.value += '9' " type="button" name="" value="9">
+	<br>
+	<input onclick="form.answer.value += '0' " type="button" name="" value="0">
+	<input onclick="form.answer.value += '+' " type="button" name="" value="+">
+	<input onclick="form.answer.value += '-' " type="button" name="" value="-">
+	<br>
+	<input onclick="form.answer.value += '/' " type="button" name="" value="/">
+	<input onclick="form.answer.value += '*' " type="button" name="" value="*">
+	<input onclick="form.answer.value = eval(form.answer.value)" type="button" name="" value="=">
+	<br>
+	<input onclick="form.answer.value =' ' " type="button" name="" value="clean_all" id="clean_button">
+</form>	
+</div>
+
+
+</body>
+</html>

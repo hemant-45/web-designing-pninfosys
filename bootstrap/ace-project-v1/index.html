@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ace-project-homepage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .navbar-light .navbar-nav .nav-link {
+        color: #000000ad;
+        font-weight: 500;
+        word-spacing: 2em;
+        letter-spacing: 0.6px;
+        font-size: 18px;
+      }
+      .hover:hover {
+        color: #f03c66!important;
+        }
+      .landingtxt{
+        font-family: monospace;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 1em;
+        margin-top: 70px;
+        padding: 14px;
+        /*color: #000000bf;*/
+        color: #137fbd;
+      }
+      p{
+        font-family: roboto!important;
+      }
+      .landingtxt1{
+        font-family: monospace;
+        margin-top: 4px;
+        color: #00000085;
+        font-size: 16px;
+        text-align: justify;
+        padding: 14px;
+      }
+      hr.new4 {
+         border: 2px solid #f03c66;
+        }
+      .card{
+        border:none;
+      }
+      .card-padding{
+        padding: 56px;
+        padding-bottom: 0px;
+      }
+      .cont-pading{
+        padding: 52px;
+        padding-top: 0px;
+      }
+      .button-custom{
+        width: 150px;
+        height: 40px;
+        color: #000000d9;
+        background: bisque;
+        font-weight: 500;
+        margin-left: 14px;
+        margin-bottom: 34px;
+        border: 2px solid #00000087;
+       }
+       
+       .blockquote-footer {
+        display: block;
+        font-size: 50%;
+        color: #6c757d;
+      }
+      .blockquote{
+        font-size: 36px;
+      }
+      .txtcolor{
+        color:#ed9f92;
+        font-weight: 600;
+      }
+      /* .adjustdimension{
+        height: 140px;
+        width: 140px;
+      } */
+      .techlogo{
+        border: 2px solid #0000000f;
+        padding: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        box-shadow: 2px 3px 12px 0px #00000036;
+      }
+      .centr{
+        /* margin-left: 24px; */
+        color: #00000078;
+        font-weight: 700;
+        font-family: monospace;
+        font-size: 18px;
+        text-align: center;
+        text-shadow: 1px 1px 1px #fff;
+       /* border: 2px solid #0000001a;*/
+      }
+      .centr1{
+        color: #00000078;
+        font-weight: 700;
+        /*border: 2px solid #0000001a;*/
+        margin-top: 20px;
+        /*margin-bottom: 60px;*/
+        font-family: monospace;
+        text-align: center;
+      }
+      img{
+        padding-bottom: 24px;
+      }
+      .card-dimension {
+        height: 450px;
+        box-shadow: 2px 3px 12px 0px #00000036;
+        border: 2px solid #0000000f;
+        border-radius: 12px;
+     }
+     
+    .footertxt{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-family: monospace;
+    text-align: justify;
+    color: #f9f7f7c7;
+    }
+    .get-in-touch{
+      font-family: monospace;
+      font-size: 26px;
+      font-weight: 600;
+      color: #ffffffe0;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    .card-txt{
+      padding-top: 24px;
+      text-align: justify;
+      padding: 24px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .semi-footer{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #ffffffc2!important;
+      font-size: 12px; 
+      font-family: monospace;
+        }
+
+    @media(max-width:576px){
+      .ace-logo{
+      padding: 1px;
+      margin-left:0px!important;
+         }
+    }
+     @media(max-width:576px){
+      .nav-menu{
+         margin-top: 16px!important;
+         }
+    }
+     @media(max-width:576px){
+      .media{
+         margin-top: 30px!important;
+         }
+    }
+    
+     @media(max-width:576px){
+      .media-card-txt{
+         font-size: 20px;
+         }
+    }
+     @media(max-width:576px){
+      .techlogo{
+        padding: 48px!important;
+        height: 220px;            
+        /* use height otherwise images may look vertically stretched
+ */
+      }
+         }
+
+    @media(max-width:576px){
+      .card-padding{
+        padding: 32px!important;
+      }
+    }
+    img.vert-move {
+        -webkit-animation: mover 1.6s infinite  alternate;
+        animation: mover 1.6s infinite  alternate;
+    }
+    @-webkit-keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-32px); }
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-32px); }
+    }
+
+    </style>
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a href="" class="navbar-brand">
+      <img src="image/ace-removebg-1.png" style="width:140px;margin-top:10px;margin-left: 30px;"class="ace-logo">
+     </a> 
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#a">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="a">
+    <ul class="navbar-nav ml-auto nav-menu " style="margin-top: -32px;">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link hover">Home&nbsp;</a></li>
+      <li class="nav-item">
+        <a href="ace-aboutus.html" class="nav-link hover">About&nbsp;</a></li>
+      <li class="nav-item">
+        <a href="ace-services.html" class="nav-link hover">Services&nbsp;</a></li>
+      <li class="nav-item">
+        <a href="ace-works.html" class="nav-link hover">Works&nbsp;</a></li>
+      <li class="nav-item">
+        <a href="ace-contact.html" class="nav-link hover">Contact&nbsp;</a></li>
+    </ul> 
+    </div>
+ </div> 
+ </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 card">
+        <h1 class="landingtxt media">Where work <br> happens</h1>
+        <p class="landingtxt1">Ace is a leading global business consulting and IT service company,
+        Whether you need to run your business more efficiently or accelerate revenue growth, Ace can get you there.</p>
+        <button class="button-custom">Explore</button>
+    </div>
+    <div class="col-md-7 card">
+       <img src="image/illustration-1.png" alt="" class="w-100 vert-move" 
+       style="padding-bottom: 40px;">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+   <h1 class="landingtxt text-center" style="padding-bottom: 60px;margin-top: -10px;">
+   <hr class="new4">Our Trainings<hr class="new4"></h1>
+  <div class="row">
+    <div class="col-md-5 card">
+      <img src="image/illustration-1d.png" alt="" class="w-100 vert-move">
+    </div>
+    <div class="col-md-7 card text-center " style="font-family: monospace;">
+        <blockquote class="blockquote ">
+                Web designing
+            <p class="blockquote-footer">includes <span class="txtcolor"> HTML, CSS, JS, Bootstrap</span></p>
+        </blockquote>
+        <blockquote class="blockquote ">
+                Web development
+            <p class="blockquote-footer">includes <span class="txtcolor">Angular, Python, Django, Laravel</span></p>
+        </blockquote>
+        <blockquote class="blockquote ">
+               App development
+            <p class="blockquote-footer">includes <span class="txtcolor">Flutter, React, Sql, Swift</span></p>
+        </blockquote>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h1 class="landingtxt text-center" style="padding-bottom: 70px;margin-top: 50px;">
+   <hr class="new4">Our Tech Stack<hr class="new4"></h1>
+   <div class="container cont-pading">
+  <div class="row ">
+
+    <div class="col-md-3 card card-padding ">
+      <h6 class="centr media-card-txt">HTML 5</h6>
+      <img src="image/html.png" alt="" class="adjustdimension techlogo">
+    </div>
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">CSS 3</h6><img src="image/css.png" alt="" class="adjustdimension techlogo "></div>
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">JAVASCRIPT</h6><img src="image/js.png" alt="" class="adjustdimension techlogo "></div>
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">BOOTSTRAP</h6><img src="image/bootstrap.png" alt="" class="adjustdimension techlogo"></div>
+      
+
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">PYTHON</h6><img src="image/python.png" alt="" class="adjustdimension techlogo "></div>
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">DJANGO</h6><img src="image/django.png" alt="" class="adjustdimension techlogo "></div>
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">ANGULAR</h6><img src="image/angular.png" alt="" class="adjustdimension techlogo "></div>
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">LARAVEL</h6><img src="image/laravel.png" alt="" class="adjustdimension techlogo "></div>
+      
+
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">FLUTTER</h6>
+      <img src="image/flutter.png" alt="" class="adjustdimension techlogo"></div>
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">MONGO-DB</h6>
+      <img src="image/mongodb.png" alt="" class="adjustdimension techlogo"></div>
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">SQL
+    </h6><img src="image/sql.png" alt="" class="adjustdimension techlogo"></div>
+    <div class="col-md-3 card card-padding "><h6 class="centr media-card-txt">SWIFT</h6><img src="image/swift.png" alt="" class="adjustdimension techlogo"></div>
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+  <h1 class="landingtxt text-center" style="padding-bottom: 70px;margin-top: 50px;">
+   <hr class="new4">Our Services<hr class="new4"></h1>
+  <div class="row">
+    <div class="col-md-4 card" style="padding-bottom: 60px;">
+      <h2 class="centr1">Modern designing</h2>
+        <div class="card centr1 card-dimension">
+          <img src="image/illustration-1a.png" alt="" style="height: 324px;border-radius: 12px;">
+             <p style="text-align: justify;padding: 24px;padding-top: 0px;font-size: 14px; font-weight: 400;">Ace brings robust skills and forward looking perspectives to solve customer challenges. We use proven knowledge to make recommendations and provide expert guidance to our customers.
+             </p>
+        </div>
+    </div>
+    <div class="col-md-4 card" style="padding-bottom: 60px;">
+      <h2 class="centr1">User friendly</h2>
+        <div class="card centr1 card-dimension"> 
+        <img src="image/illustration-1b.png" alt="" style="background: #8a8389;height: 300px;border-radius: 12px 12px 0px 0px;">
+        <p class="card-txt">Ace believes in developing true partnerships. We foster a collegial environment where individual perspectives are respected and honest dialogue is expected.</p>
+      </div>
+    </div>
+    <div class="col-md-4 card" >
+      <h2 class="centr1">Full maintenance</h2>
+        <div class="card centr1 card-dimension">
+          <img src="image/illustration-1c.png" alt="" style="background: #134967;height: 302px;border-radius: 12px 12px 0px 0px;">
+          <p class="card-txt">Ace Company provides a full range of maintenance and compliance services for Government and Commercial facilities both large and small.</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+<div class="container-fluid" style="background: #0e77b3;">
+  <div class="container">
+  <div class="row" style="background: #0e77b3;">
+
+    <div class="col-md-4">
+      <div class="card " style="background: #0e77b3;margin-top: 60px;">
+          <h4 class="get-in-touch" style="letter-spacing: 2px;">
+           <!-- <span style="color: #11a4f3;">PN<span style="color: #b0b0b0;">INFO</span>SYS</span> -->
+            <span style="color: #f03c66;">A</span><span style="color: #65c4fb;">c</span><span style="color: #ffbe0a;">e</span>
+        </h4>
+           <p class="footertxt">Ace is a leading global business consulting and IT service company. It provide a full range of maintenance and compliance services for Government and Commercial facilities </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center" style="padding-bottom: 40px;background: #0e77b3;margin-top: 60px;">
+        <h4 class="get-in-touch" >Get in touch.</h4>
+        <p class="footertxt" style="text-align: -webkit-center;">
+            Need guidance, Meet us at -<br> 
+            MIG-332, Darpan Colony,<br>
+             Thatipur, Gwalior,<br>
+             Madhya Pradesh, India <br>
+          </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="background: #0e77b3;margin-top: 60px;">
+
+          <div style="padding-bottom: 30px;text-align: center;" class="font-awesome">
+
+            <a href="" style="text-decoration: none;margin-right: 20px;">
+            <i class="fa fa-twitter hover" aria-hidden="true" 
+            style="color: #e2eef6;color: #e2eef6;font-size: 24px;"></i>
+          </a>
+
+            <a href="" style="text-decoration: none;margin-right: 20px;">
+            <i class="fa fa-facebook hover" aria-hidden="true" 
+            style="color: #e2eef6;font-size: 22px;"></i>
+          </a>
+
+          <a href="" style="text-decoration: none;margin-right: 20px;">
+            <i class="fa fa-instagram hover" aria-hidden="true" 
+            style="color: #e2eef6;font-size: 24px;"></i>
+          </a>
+
+          <a href="" style="text-decoration: none;">
+            <i class="fa fa-youtube-play hover" aria-hidden="true" 
+            style="color: #e2eef6;font-size: 24px;"></i>
+          </a>
+        </div>
+      <p class="footertxt" style="text-align: center;">
+        Drop us a mail at <br>
+            <span style="font-weight: 600;color: #ffbe0a;">support@ace.com</span> <br>
+            Call us or Whatsapp at <br>
+            <span style="font-weight: 600;color: #ffbe0a;">+91 1000846823 </span><br><br><br>
+          </p> 
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid" style="background: #093356!important;"> 
+  <div class="container">
+    <div class="row">
+       <div class="col-md-2"></div>
+       <div class="col-md-8 text-center semi-footer">
+        PRIVACY POLICY | TERMS AND CONDITIONS <br>
+                COPYRIGHT © 2021 ACE PRIVATE LIMITED
+       </div>
+       <div class="col-md-2"></div>
+    </div>   <!-------------row end------------->
+  </div>  <!-------------container end------------->
+</div>    <!-------------container fluid end------------->
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

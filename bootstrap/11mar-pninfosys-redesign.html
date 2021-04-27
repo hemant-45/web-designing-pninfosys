@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>bootstrap-navbar</title>
+  <title>pninfosys-redesign</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -14,6 +14,8 @@
       color: #000000d6;
       font-weight: 500;
       word-spacing: 2em;
+      letter-spacing: 0.6px;
+      font-size: 18px;
       }
       .landingtxt{
         font-family: monospace;
@@ -116,22 +118,44 @@
       text-align: justify;
       padding: 24px;
     }
-
+    .semi-footer{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #ffffffc2!important;
+      font-size: 12px; 
+      font-family: monospace;
+        }
+    @media(max-width:400px){
+      .ace-logo{
+      padding: 1px;
+      margin-left:0px!important;
+         }
+    }
+     @media(max-width:400px){
+      .nav-menu{
+         margin-top: 16px!important;
+         }
+    }
+    @media(max-width:400px){
+      .font-awesome{
+         margin-left: 22px!important;
+         }
+    }
     </style>
     
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-light" style="padding: 20px;">
+    <nav class="navbar navbar-expand-md navbar-light">
       <a href="" class="navbar-brand">
-      <img src="image/pninfosys.png" style="padding-left:30px;width:160px;margin-top: 20px;" >
+      <img src="image/ace-removebg-1.png" style="width:140px;margin-top:10px;margin-left: 30px;"class="ace-logo">
      </a> 
     <button class="navbar-toggler" data-toggle="collapse" data-target="#a">
       <span class="navbar-toggler-icon"></span>
     </button>
 
   <div class="collapse navbar-collapse" id="a">
-    <ul class="navbar-nav ml-auto" >
+    <ul class="navbar-nav ml-auto nav-menu" style="margin-top: -32px;">
       <li class="nav-item">
         <a href="" class="nav-link">Home&nbsp;</a></li>
       <li class="nav-item">
@@ -148,11 +172,11 @@
  </nav>
 
 <div class="container">
-  <div class="row" style="margin-top: 50px;">
+  <div class="row">
     <div class="col-md-5 card">
         <h1 class="landingtxt">Where work <br> happens</h1>
-        <p class="landingtxt1">PN INFOSYS is a leading global business consulting and IT service company,
-        Whether you need to run your business more efficiently or accelerate revenue growth, PN INFOSYS can get you there.</p>
+        <p class="landingtxt1">Ace is a leading global business consulting and IT service company,
+        Whether you need to run your business more efficiently or accelerate revenue growth, Ace can get you there.</p>
         <button class="button-custom">Explore</button>
     </div>
     <div class="col-md-7">
@@ -190,7 +214,7 @@
 <div class="container">
   <h1 class="landingtxt text-center" style="padding-bottom: 70px;margin-top: 50px;">
    Our Tech Stack</h1>
-  <div class="row" style=" margin-left: 100px;">
+  <div class="row" style=" margin-left: 80px;">
 
     <div class="col-md-3 card"><h6 class="centr">&nbsp;&nbsp;HTML 5</h6><img src="image/html-logo.png" alt="" class="adjustdimension techlogo"></div>
     <div class="col-md-3 card"><h6 class="centr">&nbsp;&nbsp;&nbsp;CSS 3</h6><img src="image/css-logo.png" alt="" class="adjustdimension techlogo"></div>
@@ -222,7 +246,7 @@
       <h2 class="centr1">Modern designing</h2>
         <div class="card centr1 card-dimension">
           <img src="image/modern-design-illustration.jpg" alt="" style="height: 324px;border-radius: 12px;">
-             <p style="text-align: justify;padding: 24px;padding-top: 0px;">PN INFOSYS brings robust skills and forward looking perspectives to solve customer challenges. We use proven knowledge to make recommendations and provide expert guidance to our customers.
+             <p style="text-align: justify;padding: 24px;padding-top: 0px;">Ace brings robust skills and forward looking perspectives to solve customer challenges. We use proven knowledge to make recommendations and provide expert guidance to our customers.
              </p>
         </div>
     </div>
@@ -230,14 +254,14 @@
       <h2 class="centr1">User friendly</h2>
         <div class="card centr1 card-dimension"> 
         <img src="image/user-friendly.png" alt="" style="background: #8a8389;height: 300px;border-radius: 12px 12px 0px 0px;">
-        <p class="card-txt">PN INFOSYS believes in developing true partnerships. We foster a collegial environment where individual perspectives are respected and honest dialogue is expected.</p>
+        <p class="card-txt">Ace believes in developing true partnerships. We foster a collegial environment where individual perspectives are respected and honest dialogue is expected.</p>
       </div>
     </div>
     <div class="col-md-4 " >
       <h2 class="centr1">Full maintenance</h2>
         <div class="card centr1 card-dimension">
           <img src="image/maintenance-1.png" alt="" style="background: #134967;height: 302px;border-radius: 12px 12px 0px 0px;">
-          <p class="card-txt">PN INFOSYS Company provides a full range of maintenance and compliance services for Government and Commercial facilities both large and small.</p>
+          <p class="card-txt">Ace Company provides a full range of maintenance and compliance services for Government and Commercial facilities both large and small.</p>
         </div>
     </div>
   </div>
@@ -254,30 +278,27 @@
     <div class="col-md-4">
       <div class="card " style="background: #404040;margin-top: 60px;">
           <h4 class="get-in-touch">
-           <span style="color: #11a4f3;">PN<span style="color: #b0b0b0;">INFO</span>SYS</span>
-          
+           <!-- <span style="color: #11a4f3;">PN<span style="color: #b0b0b0;">INFO</span>SYS</span> -->
+            <span style="color: #f03c66;">A</span><span style="color: #0099f2;">c</span><span style="color: #ffbe0a;">e</span>
         </h4>
-           <p class="footertxt">PN INFOSYS is a leading global business consulting and IT service company. It provide a full range of maintenance and compliance services for Government and Commercial facilities for both large and small businesses.</p>
+           <p class="footertxt">Ace is a leading global business consulting and IT service company. It provide a full range of maintenance and compliance services for Government and Commercial facilities </p>
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card" style="padding-bottom: 40px;background: #404040;margin-top: 60px;">
+      <div class="card text-center" style="padding-bottom: 40px;background: #404040;margin-top: 60px;">
         <h4 class="get-in-touch">Get in touch.</h4>
         <p class="footertxt" style="text-align: -webkit-center;">
             Need guidance, Meet us at -<br> 
-            MIG-332, Darpan Colony, Thatipur, <br>
-            Gwalior, Madhya Pradesh, India <br>
-            Drop us a mail at <br>
-            <span style="font-weight: 600;color: #5abbef;">support@pninfosys.com</span> <br>
-            Call us or Whatsapp at <br>
-            <span style="font-weight: 600;color: #5abbef;">+91 7000846823 </span><br>
-            <span style="font-weight: 600;color: #5abbef;">+91 7415289378</span>
+            MIG-332, Darpan Colony,<br>
+             Thatipur, Gwalior,<br>
+             Madhya Pradesh, India <br>
           </p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="card" style="background: #404040;margin-top: 60px;">
-           <div style="text-indent: 1.4em;padding-bottom: 30px;margin-left: 45px;">
+
+          <div style="text-indent: 1.4em;padding-bottom: 30px;margin-left: 45px;" class="font-awesome">
 
             <a href="" style="text-decoration: none;">
             <i class="fa fa-twitter" aria-hidden="true" 
@@ -299,13 +320,30 @@
             style="color: #b0b0b0;font-size: 24px;"></i>
           </a>
         </div>
-      <p class="footertxt" style="text-align: center;">Copyright © 2021 PN INFOSYS. <br>
-       All rights reserved</p> 
+      <p class="footertxt" style="text-align: center;">
+        Drop us a mail at <br>
+            <span style="font-weight: 600;color: #5abbef;">support@ace.com</span> <br>
+            Call us or Whatsapp at <br>
+            <span style="font-weight: 600;color: #5abbef;">+91 1000846823 </span><br><br><br>
+          </p> 
       </div>
     </div>
   </div>
 </div>
 </div>
+
+<div class="container-fluid" style="background: #131313f2!important;"> 
+  <div class="container">
+    <div class="row">
+       <div class="col-md-2"></div>
+       <div class="col-md-8 text-center semi-footer">
+        PRIVACY POLICY | TERMS AND CONDITIONS <br>
+                COPYRIGHT © 2021 ACE PRIVATE LIMITED
+       </div>
+       <div class="col-md-2"></div>
+    </div>   <!-------------row end------------->
+  </div>  <!-------------container end------------->
+</div>    <!-------------container fluid end------------->
 
 </body>
 </html>

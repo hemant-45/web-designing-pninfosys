@@ -1,151 +1,148 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>bootstrap card</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<style>
-	 .card{
-         border:2px solid #00000012;
-         box-shadow: 2px 2px 12px 2px #000000b8;
-	 }
-	 .card-dimension{
-	 	height:400px;
-	 	box-shadow: 2px 2px 12px 2px #000000b8;
-	 	border-radius: 12px
-	 }
-     .navbar-dimension{
-     	height:70px;
-     }
+  <head>
+    <title>bootstrap card</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      .card {
+        border: 2px solid #00000012;
+        box-shadow: 2px 2px 12px 2px #000000b8;
+      }
+      .card-dimension {
+        height: 400px;
+        box-shadow: 2px 2px 12px 2px #000000b8;
+        border-radius: 12px;
+      }
+      .navbar-dimension {
+        height: 70px;
+      }
+
+
+      .inner{
+		overflow: hidden;
+	}
+	.inner img{
+		transition: all 1.5s ease;
+	}
+	.inner:hover img{
+		transform: scale(1.5);
+		
+	}
+
+
     </style>
-</head>
-<body>
-<br>
+  </head>
+  <body>
+    <br />
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card bg-info inner">
+            <img src="image/bernese.jpg" alt="" />
 
-<div class="container">
-	<div class="row">
+            <div class="card-body">
+              <p class="text-white">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
 
-		<div class="col-md-4">
-			<div class="card bg-info">
-
-				<img src="image/bernese.jpg" alt="">
-
-				<div class="card-body">
-					<p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </p>
-
-				<center>
-                 <button class="btn btn-danger">
-                 	Read more
-                 </button>
-                 </center>
-                <!--  <a href="" class="btn btn-danger ">Next</a> -->
-				</div>
-			 </div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="card bg-info">
-				<div class="card-body">
-			<h1 class="text-center text-white">Login Form</h1>
-			<form>
-             <br>
-			 <div class="form-group text-white">
-			 	<label>Username:</label>
-			 	<input type="tex" name="" class="form-control">
-			 </div>
-
-			 <div class="form-group text-white">
-			 	<label>Password:</label>
-			 	<input type="password" name="" class="form-control">
-			 </div>
               <center>
-			  <button class="btn btn-danger">Login</button>
-			  </center>
-			</form>
-		</div>
-		</div>
-		</div>
-			
-	
+                <button class="btn btn-danger">Read more</button>
+              </center>
+              <!--  <a href="" class="btn btn-danger ">Next</a> -->
+            </div>
+          </div>
+        </div>
 
-		<div class="col-md-4">
-			<div class="card bg-info">
-				<img src="image/bernese.jpg" alt="">
-				<div class="card-body">
-			<h1 class="text-center text-white">Login Form</h1>
-			<form>
-             <br>
-			 <div class="form-group text-white">
-			 	<label>Username:</label>
-			 	<input type="tex" name="" class="form-control">
-			 </div>
+        <div class="col-md-4">
+          <div class="card bg-info">
+            <div class="card-body">
+              <h1 class="text-center text-white">Login Form</h1>
+              <form>
+                <br />
+                <div class="form-group text-white">
+                  <label>Username:</label>
+                  <input type="tex" name="" class="form-control" />
+                </div>
 
-			 <div class="form-group text-white">
-			 	<label>Password:</label>
-			 	<input type="password" name="" class="form-control">
-			 </div>
-              <center>
-			  <button class="btn btn-danger">Login</button>
-			  </center>
-			</form>
-		</div>
-	</div>
-</div>
+                <div class="form-group text-white">
+                  <label>Password:</label>
+                  <input type="password" name="" class="form-control" />
+                </div>
+                <center>
+                  <button class="btn btn-danger">Login</button>
+                </center>
+              </form>
+            </div>
+          </div>
+        </div>
 
-	</div>
-</div>
+        <div class="col-md-4">
+          <div class="card bg-info">
+            <img src="image/bernese.jpg" alt="" />
+            <div class="card-body">
+              <h1 class="text-center text-white">Login Form</h1>
+              <form>
+                <br />
+                <div class="form-group text-white">
+                  <label>Username:</label>
+                  <input type="tex" name="" class="form-control" />
+                </div>
 
-<br><br><br>
+                <div class="form-group text-white">
+                  <label>Password:</label>
+                  <input type="password" name="" class="form-control" />
+                </div>
+                <center>
+                  <button class="btn btn-danger">Login</button>
+                </center>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <br /><br /><br />
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-3">
-			<div class="card bg-info card-dimension">
-				hello
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card bg-info card-dimension">
-				hello
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card bg-info card-dimension">
-				hello
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card bg-info card-dimension">
-				hello
-			</div>
-		</div>
-	</div>
-</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card bg-info card-dimension">hello</div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-info card-dimension">hello</div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-info card-dimension">hello</div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-info card-dimension">hello</div>
+        </div>
+      </div>
+    </div>
 
-<br><br><br>
+    <br /><br /><br />
 
-<div class="container-fluid bg-info card-dimension">
-	<div class="row">
-		<div class="col-md-6">
-			hello
-		</div>
-		<div class="col-md-6">
-			hello
-		</div>
-	</div>
-</div>
-<br><br><br>
+    <div class="container-fluid bg-info card-dimension">
+      <div class="row">
+        <div class="col-md-6">hello</div>
+        <div class="col-md-6">hello</div>
+      </div>
+    </div>
+    <br /><br /><br />
 
-<div class="container-fluid bg-info navbar-dimension">
-	<div class="row">
-		<div class="col-md-12">
-			hello
-		</div>
-	</div>
-</div>
-<br><br><br>
-
-
-</body>
+    <div class="container-fluid bg-info navbar-dimension">
+      <div class="row">
+        <div class="col-md-12">hello</div>
+      </div>
+    </div>
+    <br /><br /><br />
+  </body>
 </html>

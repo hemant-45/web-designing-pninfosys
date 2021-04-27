@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js-array</title>
+	<script type="text/javascript">
+		
+    var arr = ["pn","a","gwalior","mits",12,30,40,20.5,true]
+
+    document.write(arr);
+    document.write("<br>");
+
+    document.write(arr[0]);
+    document.write("<br>");
+
+    document.write(arr[7]);
+    document.write("<br>");
+
+
+
+    var arr = [10,20,30,40,50]
+    var sum = 0;
+
+    document.write("<ul>");
+
+    for(var a=0; a<=4 ; a++)
+    {
+    	document.write("<li>" + arr[a] + "</li>");
+    	sum = sum + arr[a];
+    }
+    
+    document.write("</ul>");
+    document.write("Total Sum :" + sum);
+
+    document.write("<br>");
+
+    var a = [
+
+        ["raj",18,true],
+        ["baj",20,false],
+        ["gaj",22,true,"doggo"],
+        ["saj",24,false,"froggo","doggo"],
+        ];
+
+        document.write(a[3][3]);
+        document.write("<br>");
+
+        document.write(a[2][2]);
+        document.write("<br>");
+
+        document.write(a[1][1]);
+        document.write("<br>");
+
+        
+
+        var a = ["abba","harmonium","bajate","the"];
+
+        document.write(a + "<br><br>");
+     
+         
+        a.sort();
+        document.write(a + "<br>");
+        a.reverse();
+        document.write(a + "<br>");
+
+        a[0] = "vikas";
+        document.write(a + "<br>");
+    
+        
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

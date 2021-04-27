@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js-array-methods</title>
+	<script type="text/javascript">
+		
+    var ages = [1,2,3,4,5];
+    document.write(ages + "<br><br>");
+
+    var b = ages.some(checkage);
+    document.write(b + "<br><br>");
+
+    function checkage(age)
+    {
+    	return age >= 10;
+    }
+
+    
+    document.write("------------------------------" + "<br><br>");
+
+
+    var ages = [19,20,34,42,57];
+    document.write(ages + "<br><br>");
+
+    var b = ages.every(checkage);
+    document.write(b + "<br><br>");
+
+    function checkage(age)
+    {
+    	return age >= 25;
+    }
+    
+    document.write("------------------------------" + "<br><br>");
+
+    var ages = [19,20,34,42,57];
+    document.write(ages + "<br><br>");
+
+    var b = ages.find(checkage);
+    document.write(b + "<br><br>");
+
+    var b = ages.findIndex(checkage);
+    document.write(b + "<br><br>");
+
+    function checkage(age)
+    {
+    	return age >= 25;
+    }
+
+    
+    document.write("------------------------------" + "<br><br>");
+    
+
+    var ages = [19,20,34,42,57];
+    document.write(ages + "<br><br>");
+
+    var b = ages.filter(checkage);
+    document.write(b + "<br><br>");
+
+    function checkage(age)
+    {
+    	return age >= 25;
+    }
+    
+
+    document.write("------------------------------" + "<br><br>");
+
+
+    var a = ['vikas','kohli','raj','mohit',1,2,3,4];
+    a.toString();
+    document.write(a + "<br><br>");
+
+    document.write("------------------------------" + "<br><br>");
+
+    var a = ['vikas','kohli','raj','mohit',1,2,3,4];
+    a.fill("ram");
+    document.write(a + "<br><br>");
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

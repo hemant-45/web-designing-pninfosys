@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js-function</title>
+	<script type="text/javascript">     
+	// please mention type otherwise js will not work
+
+
+		function itm()
+		{
+		    document.write("hello mits");
+		}
+        
+        itm();
+
+
+        function add(a,b)           // function with parameter
+        {
+        	document.write(a+b);
+        }
+        
+        add(20,30);
+
+        
+        function fullname(fname="hello",lname="doggo")
+        {
+
+            var a = fname + " " + lname;
+            return a;
+
+        }
+        var b = fullname();
+        document.write(b);
+
+        
+
+
+        function sum(math,eng,sc)
+        {
+        	var s = math + eng + sc;
+        	return s;
+        }
+        function percent(total)
+        {
+        	var per = total/300 *100;
+        	document.write(per);
+        }
+        var total = sum(55,65,75);
+        percent(total); 
+       
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

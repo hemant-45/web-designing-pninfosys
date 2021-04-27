@@ -1,289 +1,276 @@
 <!DOCTYPE html>
 <html>
-<head>
-	
-	<title>trip machine</title>
-
-    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-
-	*{
+	<head>
+		
+		<title>trip machine</title>
+		<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+        *{
 		padding: 0px;
 		margin: 0px;
-	}
-	.navbar{
-        width: 100%;
-        height: 74px;
-        line-height: 98px;
-        background: white;
-	}
-	.navbarlogo{
+        }
+		.navbar{
+		width: 100%;
+		height: 74px;
+		line-height: 98px;
+		background: white;
+		}
+		.navbarlogo{
 		width: 152px;
-        height: 156px;
-        margin: -40px 86px;
-	}
-	.navbartxt{
-             margin-left: 494px;
-             margin-top: -48px;
-             font-weight: 600;
-             font-size: 0px;
-             font-style: italic;
-             position: absolute;
-}
-         
-    .navbartxt a{
-          color: white;
-          text-decoration: none;
-          font-size: 14px;
-          margin: 20px;
-          font-family: helvetica;
-          color: #1a1919;
+		height: 156px;
+		margin: -40px 86px;
+		}
+		.navbartxt{
+		margin-left: 494px;
+		margin-top: -48px;
+		font-weight: 600;
+		font-size: 0px;
+		font-style: italic;
+		position: absolute;
+		}
+		.navbartxt a{
+		color: white;
+		text-decoration: none;
+		font-size: 14px;
+		margin: 20px;
+		font-family: helvetica;
+		color: #1a1919;
+		}
+		.navbaricon{
+		text-indent: 1.1em;
+		margin-left: 924px;
+		margin-top: -52px;
+		position: absolute;
+		}
+		.img{
+		float: left;
+		height: 580px;
+		width: 580px;
+		margin-left: 30px;
+		margin-top: 30px;
+		}
+		.mrgnlft{
+		margin-left: 55px;
+		}
+		.semifooter{
+		width: 100%;
+		height: 250px;
+		margin-top: 1270px;
+		background: black;
+		}
+		.footer{
+		width: 100%;
+		height: 491px;
+		background: white;
+		}
+		.common{
+		list-style-type: none;
+		float: left;
+		margin-left: 128px;
+		margin-top: 44px;
+		line-height: 2.2;
+		font-size: 13px;
+		font-family: sans-serif;
+		color: #4a4848
+		}
+		.footertxt{
+		padding-top: 440px;
+		padding-left: 540px;
+		font-family: -webkit-pictograph;
+		opacity: 0.8;
+		}
+		.button{
+		margin-left:20px;
+		padding:15px 20px 30px 20px;
+		border-radius:6px;
+		width:120px;
+		height:5px;
+		font-weight:700;
+		font-size:16px;
+		font-family:arial;
+		background: #4a4848;
+		color:white;
+		border: hidden;
+		}
+		.input{
+		margin-left:20px;
+		padding:22px 20px 19px 30px;
+		border-radius:6px;
+		width:200px;
+		height:2px;
+		opacity:0.6;
+		border: hidden;
+		}
+		/* Container needed to position the button. Adjust the width as needed */
+		.container {
+		position: relative;
+		width: 50%;
+		}
+		/* Make the image responsive */
+		.container img {
+		width: 1349px;
+		height: auto;
+		}
+		/* Style the button and place it in the middle of the container/image */
+		.container .btn {
+		position: absolute;
+		top: 52%;
+		left: 38%;
+		transform: translate(-50%, -50%);
+		background-color: #d4c6bb3b;
+		/* opacity: 0.8; */
+		color: white;
+		font-size: 16px;
+		padding: 18px 34px;
+		border: 0.2px outset;
+		cursor: pointer;
+		border-radius: 5px;
+		}
+		.container .btn:hover {
+		background-color: black;
+		}
+		</style>
+	</head>
+	<body>
 
-    }
-    .navbaricon{
-    text-indent: 1.1em;
-    margin-left: 924px;
-    margin-top: -52px;
-    position: absolute;
-    }
-    
-    .img{
-    	float: left;
-        height: 580px;
-        width: 580px;
-        margin-left: 30px;
-        margin-top: 30px;
-}
-   .mrgnlft{
-   	margin-left: 55px;
-   } 
-   .semifooter{
-   	    width: 100%;
-        height: 250px;
-        margin-top: 1270px;
-        background: black;
-   }
-   .footer{
-        width: 100%;
-        height: 491px;
-        background: white;
-   }
-   .common{
-   	list-style-type: none;
-    float: left;
-    margin-left: 128px;
-    margin-top: 44px;
-    line-height: 2.2;
-    font-size: 13px;
-    font-family: sans-serif;
-    color: #4a4848
-   }
-   .footertxt{
-   	padding-top: 440px;
-    padding-left: 540px;
-    font-family: -webkit-pictograph;
-    opacity: 0.8;
-}
-.button{
-    margin-left:20px;
-    padding:15px 20px 30px 20px;
-    border-radius:6px;
-    width:120px;
-    height:5px;
-    font-weight:700;
-    font-size:16px;
-    font-family:arial;
-    background: #4a4848;
-    color:white;
-    border: hidden;
-}
-.input{
-  margin-left:20px;
-  padding:22px 20px 19px 30px;
-  border-radius:6px;
-  width:200px;
-  height:2px;
-  opacity:0.6;
-  border: hidden;
-}
+		<div class="navbar">
+			<img src="tripmachineimage/tripmachine.png" class="navbarlogo">
+		</div>
 
-/* Container needed to position the button. Adjust the width as needed */
-.container {
-  position: relative;
-  width: 50%;
-}
+		<div class="navbartxt">
+			<a href="">GARAGE</a>
+			<a href="">PRODUCTS</a>
+			<a href="">BLOG</a>
+			<a href="">ABOUT US</a>
+		</div>
 
-/* Make the image responsive */
-.container img {
-  width: 1349px;
-  height: auto;
-}
+		<div class="navbaricon">
 
-/* Style the button and place it in the middle of the container/image */
-.container .btn {
-    position: absolute;
-    top: 52%;
-    left: 38%;
-    transform: translate(-50%, -50%);
-    background-color: #d4c6bb3b;
-    /* opacity: 0.8; */
-    color: white;
-    font-size: 16px;
-    padding: 18px 34px;
-    border: 0.2px outset;
-    cursor: pointer;
-    border-radius: 5px;
-}
+			<a href="" style="text-decoration: none;">
+				<i class="fa fa-twitter" aria-hidden="true" style="color: #404040;font-size: 22px;"></i>
+			</a>
 
-.container .btn:hover {
-  background-color: black;
-}
+			<a href="" style="text-decoration: none;">
+				<i class="fa fa-facebook" aria-hidden="true" style="color: #404040;font-size: 19px;"></i>
+			</a>
 
-</style>
-</head>
-<body>
+			<a href="" style="text-decoration: none;">
+				<i class="fa fa-instagram" aria-hidden="true" style="color: #404040;font-size: 21px;"></i>
+			</a>
 
-<div class="navbar">
-	<img src="tripmachineimage/tripmachine.png" class="navbarlogo">
-</div>
+			<a href="" style="text-decoration: none;">
+				<i class="fa fa-youtube-play" aria-hidden="true" style="color: #404040;font-size: 22px;"></i>
+			</a>
 
-<div class="navbartxt">
-	<a href="">GARAGE</a>
-	<a href="">PRODUCTS</a>
-	<a href="">BLOG</a>
-	<a href="">ABOUT US</a>
-</div>
+			<a href="" style="text-decoration: none;">
+				<i class="fa fa-shopping-cart" aria-hidden="true" style="color: #404040;font-size: 21px;margin-left: 42px;"></i>
 
-<div class="navbaricon">
-<a href="" style="text-decoration: none;">
-<i class="fa fa-twitter" aria-hidden="true" style="color: #404040;font-size: 22px;"></i>
-</a>
+			<p style="margin-left: 248px;margin-top: -19px;font-family: helvetica;font-size: 14px;font-style: italic;font-weight: 600;">CART</p>
+			</a>
+		</div>
 
-<a href="" style="text-decoration: none;">
-<i class="fa fa-facebook" aria-hidden="true" style="color: #404040;font-size: 19px;"></i>
-</a>
+		<div class="container">
+			<button class="btn">CHECK IT OUT</button>
+			<img src="tripmachineimage/mask.jpg" alt=""class="bg">
+		</div>
 
-<a href="" style="text-decoration: none;">
-<i class="fa fa-instagram" aria-hidden="true" style="color: #404040;font-size: 21px;"></i>
-</a>
+		<div class="mrgnlft">
+			<img src="tripmachineimage/1.jpg" alt="" class="img">
+			<img src="tripmachineimage/2.jpg" alt="" class="img">
+		</div>
 
-<a href="" style="text-decoration: none;">
-<i class="fa fa-youtube-play" aria-hidden="true" style="color: #404040;font-size: 22px;"></i>
-</a>
+		<div class="mrgnlft">
+			<img src="tripmachineimage/3.jpg" alt="" class="img">
+			<img src="tripmachineimage/4.jpg" alt="" class="img">
+		</div>
 
+		<div class="mrgnlft">
+			<img src="tripmachineimage/5.jpg" alt="" class="img">
+			<img src="tripmachineimage/6.jpg" alt="" class="img">
+		</div>
 
-<a href="" style="text-decoration: none;">
-<i class="fa fa-shopping-cart" aria-hidden="true" style="color: #404040;font-size: 21px;margin-left: 42px;"></i>
-
-   <p style="margin-left: 248px;margin-top: -19px;font-family: helvetica;font-size: 14px;font-style: italic;font-weight: 600;">CART</p> 
-</a>
-
-</div>
-
-
-
-<div class="container">
-<button class="btn">CHECK IT OUT</button>
-<img src="tripmachineimage/mask.jpg" alt="" class="bg">
-</div>
-
-
-<div class="mrgnlft">
-	<img src="tripmachineimage/1.jpg" alt="" class="img">
-	<img src="tripmachineimage/2.jpg" alt="" class="img">
-</div>
-
-<div class="mrgnlft">
-	<img src="tripmachineimage/3.jpg" alt="" class="img">
-	<img src="tripmachineimage/4.jpg" alt="" class="img">
-</div>
-
-<div class="mrgnlft">
-	<img src="tripmachineimage/5.jpg" alt="" class="img">
-	<img src="tripmachineimage/6.jpg" alt="" class="img">
-</div>
-
-<div class="mrgnlft">
-	<img src="tripmachineimage/7.jpg" alt="" class="img">
-	<img src="tripmachineimage/8.jpg" alt="" class="img">
-</div>
-
-<div>
-	<img src="tripmachineimage/bg1.jpg" alt="" style="height:2398px; width: 1349px; margin-top: 50px;">
-</div>
-
-<div class="mrgnlft">
-	<img src="tripmachineimage/9.jpg" alt="" class="img">
-	<img src="tripmachineimage/10.jpg" alt="" class="img">
-</div>
-
-<div class="mrgnlft">
-	<img src="tripmachineimage/11.jpg" alt="" class="img">
-	<img src="tripmachineimage/12.jpg" alt="" class="img">
-</div>
- 
-<div class="semifooter">
-	<h1 style="color: white;font-family: -webkit-pictograph;padding-top: 50px;padding-left: 490px;font-size: 26px;">
-	SIGN UP TO OUR NEWSLETTER
-</h1>
-	<br> 
-	<h5 style="color: white;font-family: -webkit-pictograph;    font-weight: 100;padding-left: 530px;margin: 0 0 15px;">
-		Be the first to get updates, secret sales and more...
-	</h5>
-
-    <form action="/action_page.php" style="margin-left: 456px;    margin-top: 28px;">
- 
-  <input type="text" id="fname" name="fname" value="Enter your email address" class="input">
-
-  <button type="submit" class="button">SIGN UP </button>
-</form> 
+		<div class="mrgnlft">
+			<img src="tripmachineimage/7.jpg" alt="" class="img">
+			<img src="tripmachineimage/8.jpg" alt="" class="img">
+		</div>
 
 
-</div>
+		<div>
+			<img src="tripmachineimage/bg1.jpg" alt="" style="height:2398px; width: 1349px; margin-top: 50px;">
+		</div>
 
-<div class="footer">
-	<ul class="common">  
-        <li style="font-size: 15px; margin-bottom: 16px; font-weight:600; ">FOOTER</li>        
-     	<li>Search</li>
-     	<li>About Us</li>
-     	<li>Quick Shipping</li>
-     	<li>Returns Policy</li>
-     	
-     </ul> 
 
-     <ul class="common">  
-        <li style="font-size: 15px; margin-bottom: 16px; font-weight:600; ">GET IN TOUCH</li>        
-     	<li>Need product guidance</li>
-     	<li>Meet us at</li>
-     	<li>Plot No 207,Sector 37,Udyog Vihar 6,</li>
-     	<li>Gurgaon, India - 122004</li>
-     	<li>Drop us a mail at<br><span style="color: #990000">mail@tripmachinecompany.com</span></li>
-     	<li>Call Us or WhatsApp at<br><span style="color: #990000">+91 95600 30305</span></li>
+		<div class="mrgnlft">
+			<img src="tripmachineimage/9.jpg" alt="" class="img">
+			<img src="tripmachineimage/10.jpg" alt="" class="img">
+		</div>
 
-     	<div style="text-indent: 1.4em;margin-left: -36px;margin-top: 16px;">
-<a href="" style="text-decoration: none;">
-<i class="fa fa-twitter" aria-hidden="true" style="color: #404040;font-size: 24px;"></i>
-</a>
+		<div class="mrgnlft">
+			<img src="tripmachineimage/11.jpg" alt="" class="img">
+			<img src="tripmachineimage/12.jpg" alt="" class="img">
+		</div>
+		
 
-<a href="" style="text-decoration: none;">
-<i class="fa fa-facebook" aria-hidden="true" style="color: #404040;font-size: 22px;"></i>
-</a>
+		<div class="semifooter">
+			<h1 style="color: white;font-family: -webkit-pictograph;padding-top: 50px;padding-left: 490px;font-size: 26px;">
+			SIGN UP TO OUR NEWSLETTER
+			</h1>
+			<br>
+			<h5 style="color: white;font-family: -webkit-pictograph;    font-weight: 100;padding-left: 530px;margin: 0 0 15px;">
+			Be the first to get updates, secret sales and more...
+			</h5>
 
-<a href="" style="text-decoration: none;">
-<i class="fa fa-instagram" aria-hidden="true" style="color: #404040;font-size: 24px;"></i>
-</a>
+			<form action="/action_page.php" style="margin-left: 456px;    margin-top: 28px;">
+				
+				<input type="text" id="fname" name="fname" value="Enter your email address" class="input">
+				<button type="submit" class="button">SIGN UP </button>
+			</form>
+		</div>
 
-<a href="" style="text-decoration: none;">
-<i class="fa fa-youtube-play" aria-hidden="true" style="color: #404040;font-size: 24px;"></i>
-</a>
 
-</div>
-     </ul> 
+		<div class="footer">
+			<ul class="common">
+				<li style="font-size: 15px; margin-bottom: 16px; font-weight:600; ">FOOTER</li>
+				<li>Search</li>
+				<li>About Us</li>
+				<li>Quick Shipping</li>
+				<li>Returns Policy</li>
+			</ul>
 
-     <p class="footertxt">© 2021 Trip Machine. Powered by Shopify</p>
+			<ul class="common">
+				<li style="font-size: 15px; margin-bottom: 16px; font-weight:600; ">GET IN TOUCH</li>
+				<li>Need product guidance</li>
+				<li>Meet us at</li>
+				<li>Plot No 207,Sector 37,Udyog Vihar 6,</li>
+				<li>Gurgaon, India - 122004</li>
+				<li>Drop us a mail at<br><span style="color: #990000">mail@tripmachinecompany.com</span></li>
+				<li>Call Us or WhatsApp at<br><span style="color: #990000">+91 95600 30305</span></li>
 
-</div>
 
-</body>
+				
+			<div style="text-indent: 1.4em;margin-left: -36px;margin-top: 16px;">
+
+				    <a href="" style="text-decoration: none;">
+						<i class="fa fa-twitter" aria-hidden="true" style="color: #404040;font-size: 24px;"></i>
+					</a>
+
+				    <a href="" style="text-decoration: none;">
+						<i class="fa fa-facebook" aria-hidden="true" style="color: #404040;font-size: 22px;"></i>
+					</a>
+
+					<a href="" style="text-decoration: none;">
+						<i class="fa fa-instagram" aria-hidden="true" style="color: #404040;font-size: 24px;"></i>
+					</a>
+
+					<a href="" style="text-decoration: none;">
+						<i class="fa fa-youtube-play" aria-hidden="true" style="color: #404040;font-size: 24px;"></i>
+					</a>
+				</div>
+			</ul>
+
+			<p class="footertxt">© 2021 Trip Machine. Powered by Shopify</p>
+		</div>
+
+		
+	</body>
 </html>
